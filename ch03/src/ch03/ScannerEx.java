@@ -9,7 +9,7 @@ public class ScannerEx {
 		Scanner scanner = new Scanner(System.in);
 		//스캐너타입 변수 선언 및 객체 생성
 		String name = scanner.next();
-		System.out.print("이름은" + name + ",");
+		System.out.println("이름은" + name + ",");
 		
 		String city = scanner.next();
 		System.out.println("도시는" + city + ",");
