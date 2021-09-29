@@ -32,19 +32,19 @@ public class Work {
 				double result = ST1 * weight - ST2 * 
 						        ((weight * weight) /(double)(height * height)); 
 
-				System.out.println(result);
+				
 
 				// 체지방량 구하기
 				double result2 = weight - result;
 
-				System.out.println(result2);
+				
 
 				// 체지방률 구하기 = 체지방량*100/체중
 				final double ST3 = 100;
 
 				double result3 = result2 * ST3 / weight;
 
-				System.out.println(result3);
+				
 				
 				System.out.println("성별 = " + sex +", 나이 = " + age + "세, 몸무게 = " + weight + "kg, 키 = " + height + "cm, 의");
 				System.out.printf("제지방량 = %.2f %n"  , result);
@@ -56,7 +56,8 @@ public class Work {
 				if(quesion.equals("no")){
 					run = false;
 				}
-				System.out.println("프로그램 종료합니다. 감사합니다");
+				
 	}
+                System.out.println("프로그램 종료합니다. 감사합니다");
 	}
 }
