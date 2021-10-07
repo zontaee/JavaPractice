@@ -1,4 +1,5 @@
 package ch06.Stock;
+import java.util.Arrays;
 
 public class Stock {
 	static final String itemNo="111";
@@ -24,4 +25,7 @@ public class Stock {
 	    public int getqty() { return qty; }
 	    public void setqty(int qty) { this.qty = qty; }
 	  
-}
+	    public String toString() {
+			return "Stock [아이템 번호=" + item + ",아이템 이름=" + name + ",재고수량" + qty + "]";
+	    }
+	    }

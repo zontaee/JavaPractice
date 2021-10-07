@@ -68,7 +68,7 @@ public class StockApplication {
         	System.out.print("아이템번호 : "+StockArray[i].getitem()+" ");
         	System.out.print("아이템이름 : "+StockArray[i].getname()+" ");
         	System.out.println("재고 : "+ StockArray[i].getqty());
-        	 
+        	System.out.println(StockArray[i].toString());
         	}
         }
        
