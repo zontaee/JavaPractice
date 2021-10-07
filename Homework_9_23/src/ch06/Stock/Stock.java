@@ -4,13 +4,22 @@ import java.util.Arrays;
 public class Stock {
 	static final String itemNo="111";
 	static int seq=0;
-	private String item;
+	static int seq2 = 0;
+	static int seq3 = 0;
+    private String item;
 	    private String name;
 	    private int qty;
 	    {
 	    	seq++;
-	    	item = itemNo + "-" +seq;
+	    	seq3=seq/10;
+	    	seq2=seq/100;
+	    	item = itemNo + "-" + seq2+seq3+(seq%10);
+	    	
+	    	
+	    			
+	    		
 	    }
+	    
 	 
 	    public Stock( String name, int qty) {
 	        
