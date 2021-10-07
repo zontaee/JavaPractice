@@ -76,7 +76,7 @@ public class Exercise20_AccountExam {
         System.out.print("예금액 : ");
     	int money = scanner.nextInt();
     	Exercise20_Account newAccount = findAccount(ano);
-    	if(ano == null) {
+    	if(ano == null) {                            
     		System.out.println("결과 : 계좌가 없습니다.");
     	} else {
     		newAccount.setBalance((newAccount.getBalance()+money));
