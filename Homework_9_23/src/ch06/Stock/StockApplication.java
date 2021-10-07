@@ -16,17 +16,24 @@ public class StockApplication {
  
             int selectNo = scanner.nextInt();
  
-            if(selectNo == 1) {
-                createStock();
-            } else if(selectNo == 2) {
-            	StockList();
-            } else if(selectNo == 3) {
-            	entering();
-            } else if(selectNo == 4) {
-            	release();
-            } else if(selectNo == 5) {
-                run = false;
+            
+            switch(selectNo) {
+            case 1 : createStock();
+                       break;
+            case 2 : StockList();
+                       break;
+            case 3 : entering();
+                       break;
+            case 4 : release();
+                       break;
+            case 5 : run =false;
+            break;          
             }
+            
+            
+            
+            
+          
         }
         System.out.println("프로그램 종료");
     }
@@ -36,13 +43,12 @@ public class StockApplication {
     System.out.println("------------------");
     System.out.println("아이템생성");
     System.out.println("------------------");
-    System.out.print("아이템번호 : ");
-    String item = scanner.next();
+  
     System.out.print("아이템이름: ");
 	String name = scanner.next();
 	System.out.print("현재 수량 : ");
 	int qty = scanner.nextInt();
-	Stock newStock = new Stock(item, name, qty);
+	Stock newStock = new Stock( name, qty);
 	for(int i = 0; i < StockArray.length; i++) {
 		if(StockArray[i] == null) {
 			StockArray[i] = newStock;
@@ -59,9 +65,10 @@ public class StockApplication {
         System.out.println("------------------");
         for(int i = 0; i <StockArray.length; i++) {
         	if(StockArray[i] != null) {
-        	System.out.print(StockArray[i].getitem()+" ");
-        	System.out.print(StockArray[i].getname()+" ");
-        	System.out.println(StockArray[i].getqty());
+        	System.out.print("아이템번호 : "+StockArray[i].getitem()+" ");
+        	System.out.print("아이템이름 : "+StockArray[i].getname()+" ");
+        	System.out.println("재고 : "+ StockArray[i].getqty());
+        	 
         	}
         }
        

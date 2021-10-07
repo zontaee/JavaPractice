@@ -1,12 +1,18 @@
 package ch06.Stock;
 
 public class Stock {
-	 private String item;
+	static final String itemNo="111";
+	static int seq=0;
+	private String item;
 	    private String name;
 	    private int qty;
+	    {
+	    	seq++;
+	    	item = itemNo + "-" +seq;
+	    }
 	 
-	    public Stock(String item, String name, int qty) {
-	        this.item = item;
+	    public Stock( String name, int qty) {
+	        
 	        this.name = name;
 	        this.qty = qty;
 	    }
@@ -17,5 +23,5 @@ public class Stock {
 	    public void setname(String name) { this.name = name; }
 	    public int getqty() { return qty; }
 	    public void setqty(int qty) { this.qty = qty; }
-
+	  
 }
