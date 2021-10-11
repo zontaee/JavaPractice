@@ -14,10 +14,7 @@ public class Stock {
 	    	seq3=seq/10;
 	    	seq2=seq/100;
 	    	item = itemNo + "-" + seq2+seq3+(seq%10);
-	    	
-	    	
 	    			
-	    		
 	    }
 	    
 	 

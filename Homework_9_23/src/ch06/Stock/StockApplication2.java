@@ -42,7 +42,7 @@ public class StockApplication2 {
 	String name = scanner.next();
 	System.out.print("현재 수량 : ");
 	int qty = scanner.nextInt();
-	Stock newStock = new Stock(item, name, qty);
+	Stock newStock = new Stock( name, qty);
 	for(int i = 0; i < StockArray.length; i++) {
 		if(StockArray[i] == null) {
 			StockArray[i] = newStock;
