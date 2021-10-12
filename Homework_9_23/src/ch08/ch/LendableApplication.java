@@ -28,12 +28,7 @@ public class LendableApplication {
                        break;
             case 5 : run =false;
             break;          
-            }
-            
-            
-            
-            
-          
+            }   
         }
         System.out.println("프로그램 종료");
     }
