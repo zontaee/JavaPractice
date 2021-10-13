@@ -1,6 +1,6 @@
 package ch08;
 
-public class Exercise3 {
+public class Exercise_3 {
 	/*
 	 2. 인터페이스의 다형성과 거리가 먼 것은?
 	1.필드가 인터페이스 타입일 경우 다양한 구현객체를 다입할 수 있다
