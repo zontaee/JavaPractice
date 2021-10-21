@@ -11,12 +11,12 @@ public class Student implements Comparable<Student>{
     
     @Override
     public int compareTo(Student o) {
-        if (score < o.score) {
+        if (score <= o.score) {
             return -1;
-        }else if (score == o.score) {
-            return 0;
-        }else {
-            return 1;
+        }
+            else {
+            	return 1;
+            }
+            
         }
     }
-}
